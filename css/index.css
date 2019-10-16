@@ -198,6 +198,7 @@ header {
 	position: relative;
 	top: 20px; */
 	display: flex;
+	justify-content: space-around;
 	width: 100%;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -215,6 +216,7 @@ nav {
 
 .starter-section {
 	display: flex;
+	flex-direction: center;
 }
 
 .starterImage {
@@ -436,10 +438,61 @@ address {
 		display: flex;
 		justify-content: center;
 	}
+	.middleImg {
+		margin-top: 3%;
+	}
 	
 }
 
 @media (max-width: 500px) {
+	.container{
+		border: 1px solid red;
 	}
+	header {
+		display: flex;
+		 flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: column;
+		/* justify-content: center;
+		align-items: center; */
+		width: 100%;
+		
+	}
+	a {
+		display: block;
+		border-top: 1 solid silver;
+		border-bottom: 1px solid silver;
+		font-size: 1.3rem;
+		text-align: center;
+		padding: 4% 4% 4% 4%;
+	}
+	.mobile-hrLine {
+		border-top: 1px solid silver;
+	}
+	.firstSection {
+		display: flex;
+		flex-direction: column;
+		width: 10%;
+	}
+	.features {
+		border: 1px solid blue;
+		display: flex;
+		flex-wrap: wrap;
+		word-wrap: break-word;
+	}
+	.secondSection {
+		display: flex;
+		flex-direction: column;
+	}
+
+	hr {
+		border: 1px solid black;
+	}
+}
 	
 
