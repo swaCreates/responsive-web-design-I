@@ -65,6 +65,8 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+/* CSS for Great Idea Services.HTML */
+
 .container2 {
 	border: 2px solid red;
 	margin: 0 auto;
@@ -115,10 +117,6 @@ h1, h2, h3, h4, h5 {
 	margin-left: 35px;
 }
 
-p {
-	
-}
-
 .services-header-img {
 	border: 2px solid violet;
 	width: 100%;
@@ -159,10 +157,9 @@ ul.a {
 .services-img {
 	width: 45%;
 	margin-left: 35px;
-	/* display: flex;
-	justify-content: flex-end;
-	align-content: flex-start; */
 }
+
+/* CSS for Great Idea Index.Html */
 
 .container {
 	/* border: 2px solid red; */
@@ -192,11 +189,6 @@ a {
 }
 
 header {
-	/* background-color: green;
-	width: 400px;
-	margin: 20px;
-	position: relative;
-	top: 20px; */
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
@@ -208,7 +200,6 @@ nav {
 	padding: 5px; 
 	/* border: 1px solid rgb(90, 54, 7); */
 	display: flex;
-	/* flex-direction: row; */
 	justify-content: space-around;
 	width: 900px;
 	padding-left: 20px;
@@ -220,10 +211,6 @@ nav {
 }
 
 .starterImage {
-	/* border: 2px solid blueviolet; */
-	/* display: inline-block; */
-	/* position: relative; */
-	/* left: 5%; */
 	display: flex;
 	justify-content: center;
 	margin: 20px 10px 15px 15px;
@@ -235,8 +222,6 @@ h1 {
 	font-size: 80px;
 	font-weight: bold;
 	/* border: 1px solid darksalmon; */
-  /*   margin-top: 70px;
-	margin-left: 50px; */
      width: 400px;
 	/* height: 150px; */
 	/* padding: 5px; */
@@ -244,10 +229,6 @@ h1 {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	/* background-color: red; */
-	/* position: relative; */
-	/* bottom: 20px; */
-	/* vertical-align: 100px; */
 	word-spacing: 1em;
 }
 
@@ -270,40 +251,19 @@ h1 {
   	display: flex;
 	/* border: 2px solid purple; */
 	padding: 15px;
-	/* justify-content: space-evenly; */
-	/* position: relative; */
-	/* left: 60px; */
-	/* vertical-align: center; */
-	/* margin: 10px; */
 }
 	
 .secondSection {
 	display: flex;
 	/* border: 2px solid green; */
-	padding: 15px;
-	/* justify-content: space-evenly; */
-	/* position: relative;
-	left: 60px;
-	vertical-align: center;
-	margin-left: 50px; */  
+	padding: 15px; 
 }
-
 
 .codesnippet {
 	display: flex;
 	justify-content: flex-end;
 	margin-left: 100px;
 	margin-top: 20px;
-	/* width: 45%; */
-	/* position: relative; 
-	right: 5%; */
-	/* margin-bottom: 15px; */
-	/* border: 3px solid red;  */
-	/* padding-bottom: 15px;
-	padding-left: 20px;
-	display: inline-block;
-	vertical-align: top;
-	margin-left: 200px; */
 }
 
 
@@ -323,18 +283,10 @@ div.about {
 	/* width: 500px;  */
 }
 
-
 .middle-img {
-	width: 103%;
-}
-
-.middleImg {
-	/* border: 2px solid red; */
-	/* vertical-align: center;
-	padding-left: 50px;
-	margin-left: 90px; */
-	display: flex;
-	padding: 15px;
+	display: block;
+  	margin: 30px auto;
+	width: 100%;
 }
 
 .services {
@@ -353,12 +305,6 @@ div.about {
 	/* border: 2px solid black; */
 
 }
-
-/* .vision h2 p {
-	width: 2000px;
-} */
-
-
 
 footer p {
 	text-align: center;
@@ -391,11 +337,11 @@ address {
 	padding: 15px;
 }
 
-/* My Media Query */
+/* My Media Query for Responsive Great Idea I project */
 
 @media (max-width: 800px) {
 	.container{
-		border: 1px solid red;
+		/* border: 1px solid red; */
 		/* margin: 0 auto; */
 		width: 100%;
 	}
@@ -442,8 +388,12 @@ address {
 		display: flex;
 		justify-content: center;
 	}
-	.middleImg {
-		margin-top: 3%;
+	.middle-img {
+		width: 100%;
+	}
+	.firstSection{
+		padding:30px 0;
+		height: 190px;
 	}
 	
 }
@@ -459,8 +409,6 @@ address {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: column;
-		/* justify-content: center;
-		align-items: center; */
 		width: 100%;
 		
 	}
@@ -478,15 +426,12 @@ address {
 	.firstSection {
 		display: flex;
 		flex-direction: column;
-		/* justify-content: space-evenly;
-		flex-wrap: wrap;
-		align-items: center;
-		width: 100%; */
-		border: 1px solid palevioletred;
+		height: 250px;
+		/* border: 1px solid palevioletred; */
 		width: 100%;
 	}
 	.features {
-		border: 1px solid blue;
+		/* border: 1px solid blue; */
 		width: 100%;
 	}
 	.about{
@@ -499,17 +444,13 @@ address {
 	.secondSection {
 		display: flex;
 		flex-direction: column;
+		height: 440px;
 	}
-
 	hr {
 		border: 1px solid black;
 	}
-	.content-holder1 {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: center;
-		width: 100%;
+	address{
+		margin: 30px;
 	}
 }
 	
