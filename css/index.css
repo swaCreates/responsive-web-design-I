@@ -275,7 +275,6 @@ h1 {
 	/* left: 60px; */
 	/* vertical-align: center; */
 	/* margin: 10px; */
-	width: 100%;
 }
 	
 .secondSection {
@@ -313,7 +312,7 @@ div.features {
 	/* width: 70%; */
 	margin: 5px;
 	height: 80px;
-	width: 500px;
+	/* width: 500px; */
 }
 
 
@@ -321,7 +320,7 @@ div.about {
 	margin: 5px;
 	/* border: 2px solid blue; */
 	height: 80px; 
-	width: 500px; 
+	/* width: 500px;  */
 }
 
 
@@ -395,6 +394,11 @@ address {
 /* My Media Query */
 
 @media (max-width: 800px) {
+	.container{
+		border: 1px solid red;
+		/* margin: 0 auto; */
+		width: 100%;
+	}
 	header {
 		display: flex;
 		flex-direction: column-reverse;
@@ -445,10 +449,6 @@ address {
 }
 
 @media (max-width: 500px) {
-	.container{
-		border: 1px solid red;
-		margin: 0 auto;
-	}
 	header {
 		display: flex;
 		 flex-direction: column-reverse;
@@ -478,20 +478,23 @@ address {
 	.firstSection {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		/* justify-content: space-evenly;
 		flex-wrap: wrap;
 		align-items: center;
+		width: 100%; */
+		border: 1px solid palevioletred;
 		width: 100%;
-		
 	}
 	.features {
 		border: 1px solid blue;
-		
+		width: 100%;
 	}
 	.about{
-		width: 10%;
 		margin-top: 5%;
-		width: 100px;
+		width: 100%;
+	}
+	.about h2 {
+		margin-top:7%;
 	}
 	.secondSection {
 		display: flex;
@@ -500,6 +503,13 @@ address {
 
 	hr {
 		border: 1px solid black;
+	}
+	.content-holder1 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
 	}
 }
 	
