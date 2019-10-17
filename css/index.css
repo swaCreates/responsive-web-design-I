@@ -1,3 +1,457 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* CSS for Great Idea Services.HTML */
+
+.container2 {
+	border: 2px solid red;
+	margin: 0 auto;
+	max-width: 66%;
+	/* background: teal; */
+}
+
+.intro-content {
+	border: 2px solid violet;
+	margin-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.second-h1 {
+	font-size: 30px;
+	border: 2px solid violet;
+	width: 100px;
+}
+
+.first-content, .second-content, .third-content, .fourth-content, .fifth-content, .sixth-content {
+	border: 1px solid maroon;
+	/* display: flex; */
+	width: 45%;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	background-color: lightcyan;
+}
+
+.first-content {
+	margin-top: 20px;
+}
+
+.second-content {
+	margin-left: 35px;
+	margin-top: 20px;
+}
+
+.fourth-content {
+	margin-left: 35px;
+}
+
+.sixth-content {
+	margin-left: 35px;
+}
+
+.services-header-img {
+	border: 2px solid violet;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.content-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.content-button {
+	border: 2px solid yellow;
+	border-radius: 5px;
+	margin-left: 4px;
+	margin-top: 15px;
+}
+
+.end-of-content {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	margin-left: 15px;
+	width: 45%;
+	border: 2px solid yellow;
+}
+
+ul.a {
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+.bottom-container {
+	display: flex;
+}
+
+.services-img {
+	width: 45%;
+	margin-left: 35px;
+}
+
+/* CSS for Great Idea Index.Html */
+
+.container {
+	/* border: 2px solid red; */
+	margin: 0 auto;
+	max-width: 80%;
+
+}
+
+.main-nav {
+	border: 2px solid blue;
+	display: flex;
+	justify-content: space-between;
+	width: 900px;
+	padding-left: 20px;
+	padding: 5px;
+}
+
+.lo-go {
+	display: flex;
+	margin-left: 85px;
+}
+
+ 
+a {
+	text-decoration: none;
+	color: silver;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+nav {
+	padding: 5px; 
+	/* border: 1px solid rgb(90, 54, 7); */
+	display: flex;
+	justify-content: space-around;
+	width: 900px;
+	padding-left: 20px;
+}
+
+.starter-section {
+	display: flex;
+	flex-direction: center;
+}
+
+.starterImage {
+	display: flex;
+	justify-content: center;
+	margin: 20px 10px 15px 15px;
+	padding: 10px;
+	/* width: 45%; */
+}
+
+h1 {
+	font-size: 80px;
+	font-weight: bold;
+	/* border: 1px solid darksalmon; */
+     width: 400px;
+	/* height: 150px; */
+	/* padding: 5px; */
+	padding: 3px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	word-spacing: 1em;
+}
+
+.logo {
+	display: flex;
+	margin-left: 90px;
+}
+
+.start-button {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border: 1px solid black;
+	background-color: white;
+	margin-left: 140px;
+	margin-top: 15px;
+}
+
+.firstSection {
+  	display: flex;
+	/* border: 2px solid purple; */
+	padding: 15px;
+}
+	
+.secondSection {
+	display: flex;
+	/* border: 2px solid green; */
+	padding: 15px; 
+}
+
+.codesnippet {
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+
+div.features {
+	/* border: 2px solid black; */
+	/* width: 70%; */
+	margin: 5px;
+	height: 80px;
+	/* width: 500px; */
+}
+
+
+div.about {
+	margin: 5px;
+	/* border: 2px solid blue; */
+	height: 80px; 
+	/* width: 500px;  */
+}
+
+.middle-img {
+	display: block;
+  	margin: 30px auto;
+	width: 100%;
+}
+
+.services {
+	/* border: 2px solid black; */
+	margin: 5px;
+}
+  
+.product {
+	margin: 5px;
+	/* border: 2px solid black; */
+	
+}
+  
+.vision {
+	margin: 5px;
+	/* border: 2px solid black; */
+
+}
+
+footer p {
+	text-align: center;
+	padding-bottom: 40px;
+	margin-top: 2px;
+	width: 100%;
+	/* border: 1px solid purple; */
+}
+
+.footer {
+	text-align: center;
+	padding-bottom: 10px;
+	margin-top: 40px;
+	/* border: 1px solid yellow; */
+}
+
+button {
+	padding: 10px;
+	width: 125px;
+	margin-bottom: 20px;
+}
+
+.p2 {
+	padding-bottom: 12px;
+	padding-top: 12px;
+	/* border: 1px solid goldenrod; */
+}
+
+address {
+	padding: 15px;
+}
+
+/* My Media Query for Responsive Great Idea I project */
+
+@media (max-width: 800px) {
+	.container{
+		/* border: 1px solid red; */
+		/* margin: 0 auto; */
+		width: 100%;
+	}
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		width: 100%;
+	}
+	.Logo {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 7%;
+		margin-top: 5%;
+	}
+	.logo {
+		display: block;
+		margin: 0 auto;
+	}
+	nav {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	a {
+		width: 100%;
+	}
+	.codesnippet {
+		display: none;
+	}
+	.start-button {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		border: 1px solid black;
+		margin-left: 140px;
+		margin-top: 15px;
+		background-color: white;
+		width: 185px;
+		position: relative;
+		right: 9%;
+	}
+	.starter-section{
+		display: flex;
+		justify-content: center;
+	}
+	.middle-img {
+		width: 100%;
+	}
+	.firstSection{
+		padding:30px 0;
+		height: 190px;
+	}
+	
+}
+
+@media (max-width: 500px) {
+	header {
+		display: flex;
+		 flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: column;
+		width: 100%;
+		
+	}
+	a {
+		display: block;
+		border-top: 1 solid silver;
+		border-bottom: 1px solid silver;
+		font-size: 1.3rem;
+		text-align: center;
+		padding: 4% 4% 4% 4%;
+	}
+	.mobile-hrLine {
+		border-top: 1px solid silver;
+	}
+	.firstSection {
+		display: flex;
+		flex-direction: column;
+		height: 250px;
+		/* border: 1px solid palevioletred; */
+		width: 100%;
+	}
+	.features {
+		/* border: 1px solid blue; */
+		width: 100%;
+	}
+	.about{
+		margin-top: 5%;
+		width: 100%;
+	}
+	.about h2 {
+		margin-top:7%;
+	}
+	.secondSection {
+		display: flex;
+		flex-direction: column;
+		height: 440px;
+	}
+	hr {
+		border: 1px solid black;
+	}
+	address{
+		margin: 30px;
+	}
+}
+	
 
