@@ -447,6 +447,7 @@ address {
 @media (max-width: 500px) {
 	.container{
 		border: 1px solid red;
+		margin: 0 auto;
 	}
 	header {
 		display: flex;
@@ -477,13 +478,20 @@ address {
 	.firstSection {
 		display: flex;
 		flex-direction: column;
-		width: 10%;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 100%;
+		
 	}
 	.features {
 		border: 1px solid blue;
-		display: flex;
-		flex-wrap: wrap;
-		word-wrap: break-word;
+		
+	}
+	.about{
+		width: 10%;
+		margin-top: 5%;
+		width: 100px;
 	}
 	.secondSection {
 		display: flex;
